@@ -33,6 +33,12 @@ filetype plugin indent on
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 
+"""""""""""""""""""""
+" General
+"""""""""""""""""""""
+set directory=~/.vim/tmp
+
+
 """"""""""""""""""""""
 " Display Settings
 """"""""""""""""""""""
@@ -51,17 +57,23 @@ set list
 set listchars=eol:¬,tab:»\ ,trail:·
 
 " indent
-set noautoindent
-set nosmartindent
-filetype plugin indent off
+"set noautoindent
+"set nosmartindent
+"filetype plugin indent off
 
 set noexpandtab
-set tabstop=2
+set tabstop=4
+
 
 """""""""""""""""""
-" Insert Mode$
-""""""""""""""""""""
+" Key Map
+"""""""""""""""""""
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
+
+inoremap <Up> <Nop>
+inoremap <Down> <Nop>
+inoremap <Left> <Nop>
+inoremap <Right> <Nop>
