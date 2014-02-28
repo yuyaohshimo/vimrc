@@ -42,20 +42,19 @@ set directory=~/.vim/tmp
 """"""""""""""""""""""
 " Display Settings
 """"""""""""""""""""""
-
 colorscheme solarized
-set background=dark
+set background=light
 set guifont=Source\ Code\ Pro\ 12
 
 syntax on
 set title
 set number
+set cursorline
 set ruler
 set hlsearch
 
 set list
-set listchars=eol:¬,tab:»\ ,trail:·
-
+set listchars=eol:¬,tab:▸\ ,trail:·
 " indent
 "set noautoindent
 "set nosmartindent
@@ -63,7 +62,6 @@ set listchars=eol:¬,tab:»\ ,trail:·
 
 set noexpandtab
 set tabstop=4
-
 
 """""""""""""""""""
 " Key Map
@@ -77,3 +75,39 @@ inoremap <Up> <Nop>
 inoremap <Down> <Nop>
 inoremap <Left> <Nop>
 inoremap <Right> <Nop>
+
+""""""""""""""""""
+"Status Line
+"""""""""""""""""
+set statusline=%< "行が長すぎるときに切り詰める位置
+set statusline+=[%n] "バッファ番号
+set statusline+=%m "修正フラグ
+set statusline+=%r "読み込み専用フラグ
+set statusline+=%h "ヘルプバッファフラグ
+set statusline+=%w "プレビューウィンドウフラグ
+set statusline+=%{'['.(&fenc!=''?&fenc:&enc).':'.&ff.']'} "fencとffを表示
+set statusline+=%y " バッファ内のファイルのタイプ
+set statusline+=\ 
+if winwidth(0) >= 130
+  set statusline+=%F "バッファ内のファイルのフルパス
+else
+  set statusline+=%t "ファイル名のみ
+endif
+set statusline+=%= "左寄せ項目と右寄せ項目の区切り
+set statusline+=%{fugitive#statusline()} "Gitのブランチ名を表示
+set statusline+=\ \ 
+set statusline+=%1l "何行目にカーソルがあるか
+set statusline+=/
+set statusline+=%L " バッファ内の総行数
+set statusline+=,
+set statusline+=%c "何列目にカーソルがあるか
+set statusline+=%V "画面上の何列目にカーソルがあるか
+set statusline+=\ \ 
+set statusline+=%P "ファイル内の何％の位置にあるか
+
+set laststatus=2
+
+"""""""""""""""""
+" hi
+""""""""""""""""
+autocmd ColorScheme * highlight SpecialKey ctermbg=NONE guibg=NONE ctermfg=Grey
