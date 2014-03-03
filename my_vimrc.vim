@@ -23,6 +23,8 @@ NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'wavded/vim-stylus'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'tpope/vim-commentary'
+NeoBundle 'pangloss/vim-javascript'
 
 " You can specify revision/branch/tag.
 
@@ -59,6 +61,7 @@ set listchars=eol:¬,tab:▸\ ,trail:·
 "set noautoindent
 "set nosmartindent
 "filetype plugin indent off
+set shiftwidth=4
 
 set noexpandtab
 set tabstop=4
@@ -108,6 +111,10 @@ set statusline+=%P "ファイル内の何％の位置にあるか
 set laststatus=2
 
 """""""""""""""""
-" hi
+" hilight
 """"""""""""""""
 autocmd ColorScheme * highlight SpecialKey ctermbg=NONE guibg=NONE ctermfg=Grey
+
+""""""""""""""""
+" JavaScript
+"""""""""""""""
