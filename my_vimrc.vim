@@ -66,10 +66,10 @@ set tabstop=4
 """""""""""""""""""
 " Key Map
 """""""""""""""""""
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
+noremap <Up> <C-w>k
+noremap <Down> <C-w>j 
+noremap <Left> <C-w>h
+noremap <Right> <C-w>l
 
 inoremap <Up> <Nop>
 inoremap <Down> <Nop>
