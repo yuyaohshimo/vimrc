@@ -25,6 +25,7 @@ NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'Valloric/YouCompleteMe'
 
 " You can specify revision/branch/tag.
 
@@ -117,4 +118,4 @@ autocmd ColorScheme * highlight SpecialKey ctermbg=NONE guibg=NONE ctermfg=Grey
 
 """"""""""""""""
 " JavaScript
-"""""""""""""""
+""""""""""""""""
