@@ -40,7 +40,7 @@ NeoBundleCheck
 " General
 """""""""""""""""""""
 set directory=~/.vim/tmp
-
+set backspace=start,eol,indent
 
 """"""""""""""""""""""
 " Display Settings
