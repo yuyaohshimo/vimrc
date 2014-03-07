@@ -42,6 +42,7 @@ NeoBundleCheck
 set directory=~/.vim/tmp
 set backspace=start,eol,indent
 set clipboard=unnamed
+set mouse=a
 
 """"""""""""""""""""""
 " Display Settings
