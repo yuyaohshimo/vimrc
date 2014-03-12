@@ -25,6 +25,8 @@ NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'Simple-Javascript-Indenter'
 NeoBundle 'Valloric/YouCompleteMe'
 
 " You can specify revision/branch/tag.
@@ -42,7 +44,6 @@ NeoBundleCheck
 set directory=~/.vim/tmp
 set backspace=start,eol,indent
 set clipboard=unnamed
-set mouse=a
 
 """"""""""""""""""""""
 " Display Settings
@@ -121,3 +122,17 @@ autocmd ColorScheme * highlight SpecialKey ctermbg=NONE guibg=NONE ctermfg=Grey
 """"""""""""""""
 " JavaScript
 """"""""""""""""
+
+"""""""""""""""""""""""""""""
+" Simple javascript indenter
+"""""""""""""""""""""""""""""
+" shiftwidthを1にしてインデント
+let g:SimpleJsIndenter_BriefMode = 1
+" switchのインデント調整
+let g:SimpleJsIndenter_CaseIndentLevel = -1
+
+"""""""""""""""""""""""""""
+" file type
+"""""""""""""""""""""""""""
+au BufNewFile,BufRead * set noexpandtab tabstop=4 shiftwidth=4
+au BufNewFile,BufRead *.jade set expandtab tabstop=2 shiftwidth=2
