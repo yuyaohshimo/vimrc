@@ -28,6 +28,7 @@ NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'Simple-Javascript-Indenter'
 NeoBundle 'Valloric/YouCompleteMe'
+NeoBundle 'rking/ag.vim'
 
 " You can specify revision/branch/tag.
 
