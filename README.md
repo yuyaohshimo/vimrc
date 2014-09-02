@@ -2,9 +2,9 @@ vimrc
 
 # Getting Started
 
-## Install Neobundle
+1. Install Neobundle
 
-## Add script to .vimrc
+2. Add script to .vimrc
 
 =====
 ````
