@@ -1,4 +1,11 @@
 vimrc
+
+# Getting Started
+
+## Install Neobundle
+
+## Add script to .vimrc
+
 =====
 ````
 try
